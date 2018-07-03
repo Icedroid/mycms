@@ -45,7 +45,7 @@ return [
                         'yii\debug\Module::checkAccess',
                     ],
                     'message' => [
-                        'to' => ['admin@feehi.com', 'liufee@126.com'],//此处修改成自己接收错误的邮箱
+                        'to' => ['shenggxhz@qq.com'],//此处修改成自己接收错误的邮箱
                         'subject' => '来自 Land 后台的新日志消息',
                     ],
                 ],
@@ -80,7 +80,8 @@ return [
             ],
         ],
         'assetManager' => [
-            'linkAssets' => false,//若为unix like系统这里可以修改成true则创建css js文件软链接到assets而不是拷贝css js到assets目录
+            'linkAssets' => true,//若为unix like系统这里可以修改成true则创建css js文件软链接到assets而不是拷贝css js到assets目录
+            'appendTimestamp' => true,
             'bundles' => [
                 backend\assets\AppAsset::className() => [
                     'sourcePath' => '@backend/web/static',
