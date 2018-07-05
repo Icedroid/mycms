@@ -78,7 +78,7 @@ AppAsset::register($this);
             <div id="top-menu_1">
                 <span class="nav-search"><i class="fa fa-search"></i></span>
                 <span class="nav-search_1"><i class="fa fa-navicon"></i></span>
-                <hgroup class="logo-site" style="margin-top: 10px;">
+                <hgroup class="logo-site" style="margin-top: 0px;">
                     <h1 class="site-title">
                         <a href="<?= yii::$app->getHomeUrl() ?>"><img src="<?=yii::$app->getRequest()->getBaseUrl()?>/static/images/logo.png" alt="<?= yii::$app->feehi->website_title ?>"></a>
                     </h1>
